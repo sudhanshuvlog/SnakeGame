@@ -132,6 +132,8 @@ This project is a simple Snake Game built using Flask for the backend and JavaSc
 
 - test_app.py: Contains unit tests for the Flask application to ensure functionality.
 
+- My Docker Image for this snake game is present here - https://hub.docker.com/r/jinny1/snakegame
+
 ### Contact
 
     For any inquiries or issues, please contact [me](https://www.linkedin.com/in/sudhanshu--pandey/)

@@ -1,6 +1,6 @@
 pipeline { //pipeline as code - Jenkinsfile
     agent{
-        label "ec2"
+        label "python-worker"
     }
 
     stages { //collection of your jobs
@@ -13,7 +13,7 @@ pipeline { //pipeline as code - Jenkinsfile
         stage('Test'){
             steps{
                 sh "yum install python3-pip-21.3.1-2.amzn2023.0.5.noarch -y"
-                sh "pip install -r requirements.txt"
+                sh "pip3 install -r requirements.txt"
                 sh "pytest"
                 echo "Code have been tested succesfully!"
             }
